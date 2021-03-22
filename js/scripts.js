@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    $(".yourName").append("blah blah");
+    const yourNameInput = $("input#yourName").val();
+
+    $(".yourName").text(yourNameInput);
   
     $("#letter").show();
     event.preventDefault();
